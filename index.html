@@ -32,7 +32,6 @@
         font-size: 26px;
         color: #E5B299;
         margin-bottom: 8px;
-        height: 30px;
     }
     .header {
         font-size: 34px;
@@ -51,25 +50,10 @@
 <body>
     <div class="box">
         <div class="icon-container">
-            <i id="savings-icon" class="fas fa-coins"></i>
+            <i class="fas fa-coins"></i>
         </div>
         <div class="header">20%</div>
         <div class="desc">Financial Freedom Check: Have you locked away your 20% savings today?</div>
     </div>
-
-<script>
-    // Alternates between a stack of coins and a piggy bank
-    const icons = ["fas fa-coins", "fas fa-piggy-bank"];
-    let currentIndex = 0;
-
-    setInterval(() => {
-        currentIndex = (currentIndex + 1) % icons.length;
-        const iconElement = document.getElementById("savings-icon");
-        if (iconElement) {
-            iconElement.className = icons[currentIndex];
-        }
-    }, 2500);
-</script>
-
 </body>
 </html>
