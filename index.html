@@ -58,16 +58,16 @@
     </div>
 
 <script>
-    // List of icons to alternate between (Coin stack and Hand holding a coin)
-    const icons = ["fas fa-coins", "fas fa-hand-holding-usd"];
+    // Alternates between a stack of coins and a piggy bank
+    const icons = ["fas fa-coins", "fas fa-piggy-bank"];
     let currentIndex = 0;
 
-    const iconElement = document.getElementById("savings-icon");
-
-    // Changes the icon every 2.5 seconds
     setInterval(() => {
         currentIndex = (currentIndex + 1) % icons.length;
-        iconElement.className = icons[currentIndex];
+        const iconElement = document.getElementById("savings-icon");
+        if (iconElement) {
+            iconElement.className = icons[currentIndex];
+        }
     }, 2500);
 </script>
 
