@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"></script>
-    <title>Savings Goal Box</title>
+    <title>Savings Widget</title>
 
 <style>
     body {
@@ -13,34 +13,36 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100vh;
     }
     .box {
-        background-color: #2c221e; /* Deep espresso brown (rich brand base) */
+        background: linear-gradient(135deg, #36251E 0%, #1E130E 100%);
         width: 100%;
-        max-width: 220px;
-        padding: 20px;
-        border-radius: 12px;
+        max-width: 340px; /* Rectangular width */
+        padding: 22px 28px;
+        border-radius: 14px;
         text-align: center;
-        color: #f5f2eb; /* Soft cream text for high readability */
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        color: #F7F4EF;
+        font-family: "Comic Sans MS", "Comic Sans", cursive; /* Comic Sans font */
         box-sizing: border-box;
-        box-shadow: 0 4px 12px rgba(44, 34, 30, 0.15);
-        border: 1px solid #3d302a;
-        transition: transform 0.2s ease;
-    }
-    .box:hover {
-        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(30, 19, 14, 0.25);
+        border: 1px solid #4D372E;
     }
     .header {
         font-size: 32px;
-        font-weight: 700;
-        color: #d4a373; /* Warm aesthetic bronze/gold contrast color */
+        font-weight: bold;
+        color: #E5B299; /* Warm bronze-gold contrast */
         margin-bottom: 8px;
     }
+    .header i {
+        font-size: 26px;
+        margin-right: 10px;
+        color: #E5B299;
+    }
     .desc {
-        font-size: 13px;
+        font-size: 14px;
         line-height: 1.4;
-        color: #d8d0c5;
+        color: #D2C5BC; /* Soft cream brown text */
     }
 </style>
 
@@ -48,8 +50,7 @@
 <body>
     <div class="box">
         <div class="header">
-            <i class="fas fa-piggy-bank"></i><br>
-            20%
+            <i class="fas fa-vault"></i>20%
         </div>
         <div class="desc">of income directed straight to your savings goal.</div>
     </div>
